@@ -17,17 +17,18 @@ const CardStyle = styled.div`
 `;
 
 const PersonCard = (props) =>{
-    const 
+    console.log(props);
+    const {name, birth, gender, haircolor, height, mass} = props;
     return(
         <CardStyle className="person-card">
             <h2 className="title">
-                Name
+                {name}
             </h2>
-                <p>birth</p>
-                <p>gender</p>
-                <p>haircolor</p>
-                <p>height</p>
-                <p>mass</p>
+                <p>{birth}</p>
+                <p>{gender}</p>
+                <p>{haircolor}</p>
+                <p>{height}</p>
+                <p>{mass}</p>
         </CardStyle>
     )
 }

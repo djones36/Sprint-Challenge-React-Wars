@@ -46,21 +46,21 @@ const App = () => {
     <SiteStyle className="sitewrapper">
       <h1 className="Header">React Wars</h1>
         <AppStyle className="App">
-        {starData.map((person, index) => {
-          <PersonCard 
+          {starData.map((person, index) => {
+            return(
+              <PersonCard 
               key={index}
               name={person.name}
               birth={person.birth_year}
               gender={person.gender}
               haircolor = {person.hair_color}
               height ={person.height}
-              mass={person.mass} 
-            />
-          } 
-          )}
+              mass={person.mass} />
+            )})}
         </AppStyle>
     </SiteStyle>
   );
+  
 }
 
 export default App;
