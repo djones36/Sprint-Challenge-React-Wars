@@ -18,6 +18,7 @@ const AppStyle = styled.div`
   flex-wrap:wrap;
   justify-content: space-between;
   background: rgba(235, 231, 231, 0.625);
+  padding: 50px;
 `;
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
