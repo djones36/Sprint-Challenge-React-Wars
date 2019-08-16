@@ -7,15 +7,17 @@ import styled from "styled-components";
 const SiteStyle = styled.div`
   width:1024px;
   margin: 0 auto;
+  font-size: 62.5%;
     .Header{
       text-align:center;
+      font-size: 4rem;
     }
 `;
 const AppStyle = styled.div`
   display:flex;
   flex-wrap:wrap;
-  border:1px orange solid;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  background: rgba(235, 231, 231, 0.625);
 `;
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
