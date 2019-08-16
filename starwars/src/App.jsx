@@ -25,13 +25,13 @@ const App = () => {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
 
-  const [person, setPerson] = useState();
+  const [personState, setPerson] = useState();
 
   useEffect(() => {
     axios.get('https://swapi.co/api/people/')
     .then(response => {
-      console.log(response.data);
-      const starData = response.data;
+      console.log(response.data.results);
+      const starData = response.data.results;
       setPerson(starData);
     })
     .catch(error =>{
@@ -40,16 +40,16 @@ const App = () => {
 
   }, [])
 
-  if(!person)return <h3>loading...</h3>;
+  if(!personState)return <h3>loading...</h3>;
 
   return (
     <SiteStyle className="sitewrapper">
       <h1 className="Header">React Wars</h1>
         <AppStyle className="App">
-          {person.map(person => {
+          {personState.map((person, index) => {
             return(
               <PersonCard 
-              key={person}
+              key={index}
               name={person.name}
               birth={person.birth_year}
               gender={person.gender}
