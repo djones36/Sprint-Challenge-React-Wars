@@ -16,7 +16,8 @@ const CardStyle = styled.div`
         }
 `;
 
-const PersonCard = () =>{
+const PersonCard = (props) =>{
+    const 
     return(
         <CardStyle className="person-card">
             <h2 className="title">
@@ -26,6 +27,7 @@ const PersonCard = () =>{
                 <p>gender</p>
                 <p>haircolor</p>
                 <p>height</p>
+                <p>mass</p>
         </CardStyle>
     )
 }
