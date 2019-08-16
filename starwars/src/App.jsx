@@ -17,8 +17,8 @@ const App = () => {
     axios.get('https://swapi.co/api/people/')
     .then(response => {
       console.log(response.data);
-      // const starData = response.data;
-      // setPerson(starData);
+      const starData = response.data;
+      setPerson(starData);
     })
     .catch(error =>{
       console.log("Error: ", error)
@@ -27,8 +27,10 @@ const App = () => {
   }, [])
 
   return (
-    <div className="App">
-      <h1 className="Header">React Wars</h1>
+    <div className="sitewrapper">
+      <div className="App">
+        <h1 className="Header">React Wars</h1>
+      </div>
     </div>
   );
 }
