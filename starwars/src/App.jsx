@@ -46,10 +46,10 @@ const App = () => {
     <SiteStyle className="sitewrapper">
       <h1 className="Header">React Wars</h1>
         <AppStyle className="App">
-          {starData.map((person, index) => {
+          {person.map(person => {
             return(
               <PersonCard 
-              key={index}
+              key={person}
               name={person.name}
               birth={person.birth_year}
               gender={person.gender}
