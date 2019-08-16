@@ -14,7 +14,7 @@ const App = () => {
   const [person, setPerson] = useState();
 
   useEffect(() => {
-    axios.get('http://swapi.co/api/people/')
+    axios.get('https://swapi.co/api/people/')
     .then(response => {
       console.log(response.data);
       // const starData = response.data;
