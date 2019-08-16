@@ -4,16 +4,16 @@
 
 
 
-1. What does it mean to think in react?
+2. What does it mean to think in react?
 
+To think in react is to breakdown down a large complex design into smaller components that each do a certain function but require eachother to fully function. Like the gears in a clock. It is to think in the abstract with logic.
 
+3. Describe state.
 
-1. Describe state.
+State is the current data in an application, when the data changes in the applications the site reloads. 
 
+4. Describe props.
 
+Props is the concept of passing data between components.
 
-1. Describe props.
-
-Props is the concapet of passing data between components.
-
-1. What are side effects, and how do you sync effects in a React component to state or prop changes?
+5. What are side effects, and how do you sync effects in a React component to state or prop changes?
