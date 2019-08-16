@@ -11,15 +11,19 @@ const App = () => {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
 
-  const [card, setCard] = useState();
+  const [person, setPerson] = useState();
 
   useEffect(() => {
-    axios.get('https://swapi.co/documentation#people')
-    .then((response) => {
+    axios.get('http://swapi.co/api/people/')
+    .then(response => {
       console.log(response.data);
-      const starData = response.data;
-      setCard(starData);
+      // const starData = response.data;
+      // setPerson(starData);
     })
+    .catch(error =>{
+      console.log("Error: ", error)
+    })
+
   }, [])
 
   return (
